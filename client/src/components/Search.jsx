@@ -8,7 +8,7 @@ function Search() {
   const handleSearch = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.get(`http://5000/search?q=${query}`);
+      const res = await axios.get(`https://searchapp-4tte.onrender.com/search?q=${query}`);
       setResults(Array.isArray(res.data) ? res.data : []);
     } catch (err) {
       console.error("Error fetching search results:", err);
