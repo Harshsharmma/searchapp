@@ -15,7 +15,7 @@ const AddItem = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/search/add",
+        "http://5000/search/add",
         newItem
       );
       console.log(response.data);
