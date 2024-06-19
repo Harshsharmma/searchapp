@@ -15,7 +15,7 @@ const AddItem = () => {
 
     try {
       const response = await axios.post(
-        "http://5000/search/add",
+        "https://searchapp-4tte.onrender.com/search/add",
         newItem
       );
       console.log(response.data);
